@@ -20,7 +20,7 @@ makeMatrix <- function(x = numeric(), rows, cols) {
 
 
 
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(x) {
   m <- x$getinv()
   if(!is.null(m)) {
     message("getting cached data")
